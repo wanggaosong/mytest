@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+/*Author:zhangdb*/
+*{margin:0;padding:0;font-family:"微软雅黑";list-style:none;}
+html,body{height:100% ;font-size: 14px; color: #666;}
+body{min-width:700px;text-align: center;}
+.headtitle{background-color: #f9f9f9; width:100%; height:30px;}
+.tophead{margin:0 auto;  width: 1200px;  height: 30px;}
+.tophead .topheadleft{float:left; height: 30px; line-height:30px;}
+.tophead .topheadright{float:right;height: 30px; line-height:30px; margin-right: 20px;}
+ .foot{border: 1px solid #F0F0F0; height: 100px; width: 100%;  padding-top: 25px;}
+
+
+/*注册 */
+.register{margin:0 auto;  width: 1200px; height: auto;  }
+.register .nav{ height: 100px; width: 100%;  line-height: 100px; border-left: 1px solid  	#F0F0F0; border-right: 1px solid  	#F0F0F0;  border-bottom: 1px solid  	F0F0F0;   }
+.register .content {border: 1px solid #F0F0F0; height: 600px; width: 100%;text-align: center;  }
+.register .content .contentright{ width: 400px;height: 600px;border: 1px solid #F0F0F0;  text-align: center; margin-left: 400px; }
+.register .content .contentright .field{ border: 1px solid  	#C0C0C0; width: 350px; height: 40px; text-align: center; line-height: 40px; margin-left: 20px; text-align: left;margin-top: 24px;}
+.register .content .contentright .field input { border: 0px; width: 140px; margin-left: 10px; outline:none;}
+.register .content .contentright .field lable{margin-left: 5px;}
+
+
+/*登录*/
+.login{margin:0 auto;  width: 1200px; height: auto;  }
+.login .nav{ height: 100px; width: 100%;  line-height: 100px; border-left: 1px solid  	#F0F0F0; border-right: 1px solid  	#F0F0F0;  border-bottom: 1px solid  	F0F0F0;   }
+.login .content {border: 1px solid #F0F0F0; height: 360px; width: 100%;text-align: center;  }
+.login .content .contentright{ width: 400px;height: 360px;border: 1px solid #F0F0F0;  text-align: center; margin-left: 400px; }
+.login .content .contentright .field{ border: 1px solid  	#C0C0C0; width: 350px; height: 40px; text-align: center; line-height: 40px; margin-left: 20px; text-align: left;margin-top: 24px;}
+.login .content .contentright .field input { border: 0px; width: 140px; margin-left: 10px; outline:none;}
+.login .content .contentright .field lable{margin-left: 5px;}
+
+/*找回密码*/
+.findpasswd{margin:0 auto;  width: 1200px; height: auto;  }
+.findpasswd .nav{ height: 100px; width: 100%;  line-height: 100px; border-left: 1px solid  	#F0F0F0; border-right: 1px solid  	#F0F0F0;  border-bottom: 1px solid  	F0F0F0;   }
+.findpasswd .content {border: 1px solid #F0F0F0; height: 400px; width: 100%;text-align: center;  }
+.findpasswd .content .contentleft{ width: 1200px;height: 100px;}
+.findpasswd .content .contentright{ width: 400px;height: 300px;border: 1px solid #F0F0F0;  text-align: center; margin-left: 400px; }
+.findpasswd .content .contentright .field{ border: 1px solid  	#C0C0C0; width: 350px; height: 40px; text-align: center; line-height: 40px; margin-left: 20px; text-align: left;margin-top: 24px;}
+.findpasswd .content .contentright .field input { border: 0px; width: 140px; margin-left: 10px; outline:none;}
+.findpasswd .content .contentright .field lable{margin-left: 5px;}
+
+/*找回密码第二步*/
+.findpasswdsecond{margin:0 auto;  width: 1200px; height: auto;  }
+.findpasswdsecond .nav{ height: 100px; width: 100%;  line-height: 100px; border-left: 1px solid  	#F0F0F0; border-right: 1px solid  	#F0F0F0;  border-bottom: 1px solid  	F0F0F0;   }
+.findpasswdsecond .content {border: 1px solid #F0F0F0; height: 400px; width: 100%;text-align: center;  }
+.findpasswdsecond .content .contentleft{ width: 1200px;height: 100px;}
+.findpasswdsecond .content .contentright{ width: 400px;height: 300px;border: 1px solid #F0F0F0;  text-align: center; margin-left: 400px; }
+.findpasswdsecond .content .contentright .field{ border: 1px solid  	#C0C0C0; width: 350px; height: 40px; text-align: center; line-height: 40px; margin-left: 20px; text-align: left;margin-top: 24px;}
+.findpasswdsecond .content .contentright .field input { border: 0px; width: 140px; margin-left: 10px; outline:none;}
+.findpasswdsecond .content .contentright .field lable{margin-left: 5px;}
+
+/*找回密码第三步*/
+.findpasswdthird{margin:0 auto;  width: 1200px; height: auto;  }
+.findpasswdthird .nav{ height: 100px; width: 100%;  line-height: 100px; border-left: 1px solid  	#F0F0F0; border-right: 1px solid  	#F0F0F0;  border-bottom: 1px solid  	F0F0F0;   }
+.findpasswdthird .content {border: 1px solid #F0F0F0; height: 400px; width: 100%;text-align: center;  }
+.findpasswdthird .content .contentleft{ width: 1200px;height: 100px;}
+.findpasswdthird .content .contentright{ width: 400px;height: 300px;border: 1px solid #F0F0F0;  text-align: center; margin-left: 400px; }
+.findpasswdthird .content .contentright .field{ border: 1px solid  	#C0C0C0; width: 350px; height: 40px; text-align: center; line-height: 40px; margin-left: 20px; text-align: left;margin-top: 24px;}
+.findpasswdthird .content .contentright .field input { border: 0px; width: 140px; margin-left: 10px; outline:none;}
+.findpasswdthird .content .contentright .field lable{margin-left: 5px;}
+
+
+
+
+
+

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Register">
+	<typeAlias alias="register" type="com.axt.vo.Register" />
+	<cacheModel id="RegisterCache" type="LRU" readOnly="true" serialize="true">
+		<flushInterval hours="24" />
+		<flushOnExecute statement="Register.delete" />
+		<flushOnExecute statement="Register.insert" />
+		<flushOnExecute statement="Register.update" />
+		<property name="size" value="1000" />
+	</cacheModel>
+
+		<sql id="Select_Field_Clause">
+									registerid,
+									phoneumber,
+									code,
+									password,
+									ischeck,
+									registertime,
+									registerip,
+									p0,
+									p1,
+									p2,
+									p3,
+									p4
+						</sql>
+
+	<resultMap id="register-result" class="register">
+			    	    		 	<result column="registerid" jdbcType="java.lang.Long" property="registerid" />
+	    	    	    		 	<result column="phoneumber" jdbcType="java.lang.String" property="phoneumber" />
+	    	    	    		 	<result column="code" jdbcType="java.lang.String" property="code" />
+	    	    	    		 	<result column="password" jdbcType="java.lang.String" property="password" />
+	    	    	    		 	<result column="ischeck" jdbcType="java.lang.Integer" property="ischeck" />
+	    	    	    		 	<result column="registertime" jdbcType="java.util.Date" property="registertime" />
+	    	    	    		 	<result column="registerip" jdbcType="java.lang.String" property="registerip" />
+	    	    	    		 	<result column="p0" jdbcType="java.lang.String" property="p0" />
+	    	    	    		 	<result column="p1" jdbcType="java.lang.String" property="p1" />
+	    	    	    		 	<result column="p2" jdbcType="java.lang.String" property="p2" />
+	    	    	    		 	<result column="p3" jdbcType="java.lang.String" property="p3" />
+	    	    	    		 	<result column="p4" jdbcType="java.lang.String" property="p4" />
+	    	</resultMap>
+
+	<sql id="sql_of_where">
+		<dynamic prepend="WHERE">
+			    	    		  	<isNotEmpty prepend=" AND " property="registerid">registerid=#registerid#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="phoneumber">phoneumber=#phoneumber#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="code">code=#code#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="password">password=#password#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="ischeck">ischeck=#ischeck#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="registertime">registertime=#registertime#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="registerip">registerip=#registerip#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="p0">p0=#p0#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="p1">p1=#p1#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="p2">p2=#p2#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="p3">p3=#p3#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="p4">p4=#p4#</isNotEmpty>
+	    		   
+			<!-- 基于扩展考虑的追加条件，请保留 Begin -->
+			<isNotEmpty prepend=" AND " property="filter">
+				( $filter$ )
+			</isNotEmpty>
+			<!-- 基于扩展考虑的追加条件，请保留 End -->
+		</dynamic>
+	</sql>
+<!-- 通用查询 -->
+	<select id="find" parameterClass="java.util.Map"
+		resultMap="register-result">
+		select
+			<include refid="Select_Field_Clause" />
+		from t_register
+		<include refid="sql_of_where" />
+		<dynamic prepend="order by">
+			<isNotEmpty property="order">$order$</isNotEmpty>
+			<isEmpty property="order">registerid DESC</isEmpty>
+		</dynamic>
+		<dynamic>  
+	       <isPropertyAvailable property="startRow">  
+	              <isNotNull property="startRow">  
+	               limit #startRow#   
+	              </isNotNull>  
+	       </isPropertyAvailable>  
+	       <isPropertyAvailable property="pageSize" prepend=" , ">  
+	           <isNotNull property="pageSize">  
+	               #pageSize#  
+	           </isNotNull>  
+	       </isPropertyAvailable>  
+        </dynamic>
+	</select>
+<!-- 通用分页查询记录总数 修改此文件时注意 其内部查询条件应与通用查询条件保持一致， -->
+	<select id="findCount" parameterClass="java.util.Map" resultClass="Integer">
+		select count(*) from t_register
+		<include refid="sql_of_where" />
+	</select>
+    <select id="findUnique" parameterClass="java.util.Map"
+		resultMap="register-result">
+			select
+				<include refid="Select_Field_Clause" />
+			from t_register
+		<include refid="sql_of_where"/>
+	</select>
+	
+<!-- 插入 -->
+	<insert id="insert" parameterClass="register">
+		insert into t_register (
+									registerid,
+									phoneumber,
+									code,
+									password,
+									ischeck,
+									registertime,
+									registerip,
+									p0,
+									p1,
+									p2,
+									p3,
+									p4
+						) values(
+					    	    						#registerid:java.lang.Long#,
+					    	    						#phoneumber:java.lang.String#,
+					    	    						#code:java.lang.String#,
+					    	    						#password:java.lang.String#,
+					    	    						#ischeck:java.lang.Integer#,
+					    	    						#registertime:java.util.Date#,
+					    	    						#registerip:java.lang.String#,
+					    	    						#p0:java.lang.String#,
+					    	    						#p1:java.lang.String#,
+					    	    						#p2:java.lang.String#,
+					    	    						#p3:java.lang.String#,
+					    	    						#p4:java.lang.String#
+						)
+		<selectKey resultClass="long" keyProperty="registerid" > 
+              SELECT LAST_INSERT_ID()  AS registerid  
+       </selectKey>
+	</insert>
+<!-- 更新 -->
+	<update id="update" parameterClass="register">
+		update t_register
+		<dynamic prepend="set">
+																						<isNotNull prepend="," property="phoneumber">phoneumber = #phoneumber:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="code">code = #code:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="password">password = #password:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="ischeck">ischeck = #ischeck:java.lang.Integer#</isNotNull>
+												<isNotNull prepend="," property="registertime">registertime = #registertime:java.util.Date#</isNotNull>
+												<isNotNull prepend="," property="registerip">registerip = #registerip:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="p0">p0 = #p0:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="p1">p1 = #p1:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="p2">p2 = #p2:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="p3">p3 = #p3:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="p4">p4 = #p4:java.lang.String#</isNotNull>
+						</dynamic>
+		where registerid = #registerid:Long#
+		</update>
+
+<!-- 删除 -->
+	<delete id="delete" parameterClass="java.lang.Long">
+		<![CDATA[
+		DELETE FROM t_register WHERE registerid=#registerid:Long#
+		]]>
+	</delete>
+	
+	<delete id="delSelectAll" parameterClass="java.lang.String">
+		<![CDATA[
+		DELETE FROM t_register WHERE registerid in($registerids$)
+		]]>
+	</delete>
+</sqlMap>

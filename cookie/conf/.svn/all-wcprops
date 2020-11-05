@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/code/!svn/ver/4792/cookie/conf
+END
+beans-main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/code/!svn/ver/4767/cookie/conf/beans-main.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/code/!svn/ver/4767/cookie/conf/log4j.properties
+END
+sql-map-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/code/!svn/ver/4767/cookie/conf/sql-map-config.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/code/!svn/ver/4792/cookie/conf/jdbc.properties
+END

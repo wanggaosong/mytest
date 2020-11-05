@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@include file="/WEB-INF/jsp/pub.jsp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登录页面</title>  
+<script type="text/javascript">
+
+	 function checkNumberImage() {
+		var imageNumber = document.getElementById("yw0");
+		imageNumber.src = "${pageContext.request.contextPath}/member/image.do?idcode=${uuid}&timestamp="
+				+ new Date().getTime();
+	}
+ 	
+	$(document).ready(function(){
+		var isEmpty = true;
+		$("#phoneumber").focusout(function(){
+			var phoneumber = $.trim($("#phoneumber").val());
+			if(phoneumber == null || phoneumber == ""){
+				alert("*用户名不能为空~^~");
+				isEmpty= false;
+	        }else{
+				isEmpty = true;
+			}
+		});
+		//保存
+		$("#login").click(function(){
+			//添加时判断是否必填项是否为空
+			$("#phoneumber").trigger("focusout"); 
+			$("#confirmpassword").trigger("focusout"); 
+			if(!isEmpty){
+				return false;
+			}
+		 	var form = $("#myform");
+			$.ajax({
+					 type: "POST",
+					 url: "${pageContext.request.contextPath}/member/login.do",
+					 contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+					 cache:false,
+					 dataType : "json",
+					 data: $(form).serialize(),
+					 success: function(data){
+		 				alert(data.message);
+						if(data.state == 0){
+							return false;
+				 		}
+					 }
+			 });              
+			
+		});
+		
+	});
+</script>
+</head>
+<body>
+<div style="margin-left:400px;margin-top:200px;">
+	<form action="" method="post" id="myform">
+		用户名：<input type="text" class="inputCommon" id="phoneumber" name="phoneumber"> <br/><br/><br/>
+		密码：<input type="password" class="inputCommon" id="password" name="password"><br/><br/><br/>
+		<input type="text" class="inputCommon inputW80 txt" name="checkNumber" id="checkNumber">
+		验证码：<img class="code"   id="yw0" src="${pageContext.request.contextPath}/member/image.do?idcode=${uuid}"  style="cursor: hand"
+								title="点击可更换图片" height="20" onclick="checkNumberImage();"><br/><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;	
+			<a href="javascript:void(0);"  id="login" >登录</a> &nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="${pageContext.request.contextPath}/register/goToSaveRegisterPage.do" >注册</a>
+			
+				<a href="http://www.52choose.com:8080/iguacu/my/iguacu.do" >hide</a>
+	</form>
+</div>
+</body>
+</html>

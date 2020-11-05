@@ -1,0 +1,220 @@
+package com.axt.vo;
+import java.io.Serializable;
+import ssi.base.entity.BaseEntiey;
+import java.text.SimpleDateFormat;
+import com.axt.util.StringUtil;
+
+public class Register extends BaseEntiey implements Serializable{  
+		public static final SimpleDateFormat TEMPDATEFORMAT  = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	    	    	    	    
+		private java.lang.Long registerid;
+	    	    	    	    
+		private java.lang.String phoneumber;
+	    	    	    	    
+		private java.lang.String code;
+	    	    	    	    
+		private java.lang.String password;
+	    	    	    	    
+		private java.lang.Integer ischeck;
+	    	    	    	    
+		private java.util.Date registertime;
+	    	    	    	    
+		private java.lang.String registerip;
+	    	    	    	    
+		private java.lang.String p0;
+	    	    	    	    
+		private java.lang.String p1;
+	    	    	    	    
+		private java.lang.String p2;
+	    	    	    	    
+		private java.lang.String p3;
+	    	    	    	    
+		private java.lang.String p4;
+	    			    	    	    
+		public java.lang.Long getRegisterid(){
+			return registerid;
+		}
+		 
+		public void setRegisterid(java.lang.Long registerid){
+        	this.registerid=registerid;
+		}  
+	    	    	    	    
+		public java.lang.String getPhoneumber(){
+			return phoneumber;
+		}
+		 
+		public void setPhoneumber(java.lang.String phoneumber){
+        	this.phoneumber=phoneumber;
+		}  
+	    	    	    	    
+		public java.lang.String getCode(){
+			return code;
+		}
+		 
+		public void setCode(java.lang.String code){
+        	this.code=code;
+		}  
+	    	    	    	    
+		public java.lang.String getPassword(){
+			return password;
+		}
+		 
+		public void setPassword(java.lang.String password){
+        	this.password=password;
+		}  
+	    	    	    	    
+		public java.lang.Integer getIscheck(){
+			return ischeck;
+		}
+		 
+		public void setIscheck(java.lang.Integer ischeck){
+        	this.ischeck=ischeck;
+		}  
+	    	    	    	    
+		public java.util.Date getRegistertime(){
+			return registertime;
+		}
+		 
+		public void setRegistertime(java.util.Date registertime){
+        	this.registertime=registertime;
+		}  
+	    	    	    	    
+		public java.lang.String getRegisterip(){
+			return registerip;
+		}
+		 
+		public void setRegisterip(java.lang.String registerip){
+        	this.registerip=registerip;
+		}  
+	    	    	    	    
+		public java.lang.String getP0(){
+			return p0;
+		}
+		 
+		public void setP0(java.lang.String p0){
+        	this.p0=p0;
+		}  
+	    	    	    	    
+		public java.lang.String getP1(){
+			return p1;
+		}
+		 
+		public void setP1(java.lang.String p1){
+        	this.p1=p1;
+		}  
+	    	    	    	    
+		public java.lang.String getP2(){
+			return p2;
+		}
+		 
+		public void setP2(java.lang.String p2){
+        	this.p2=p2;
+		}  
+	    	    	    	    
+		public java.lang.String getP3(){
+			return p3;
+		}
+		 
+		public void setP3(java.lang.String p3){
+        	this.p3=p3;
+		}  
+	    	    	    	    
+		public java.lang.String getP4(){
+			return p4;
+		}
+		 
+		public void setP4(java.lang.String p4){
+        	this.p4=p4;
+		}  
+	    	    
+    	@Override
+		public void clear() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void updateVo(BaseEntiey vo) {
+			// TODO Auto-generated method stub
+			
+		}  
+		
+		public void copyValue( Register vo){
+		
+					  
+		    		    
+			if(!StringUtil.isEmpty(vo.getRegisterid())){
+				this.setRegisterid(vo.getRegisterid());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getPhoneumber())){
+				this.setPhoneumber(vo.getPhoneumber());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getCode())){
+				this.setCode(vo.getCode());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getPassword())){
+				this.setPassword(vo.getPassword());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getIscheck())){
+				this.setIscheck(vo.getIscheck());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getRegistertime())){
+				this.setRegistertime(vo.getRegistertime());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getRegisterip())){
+				this.setRegisterip(vo.getRegisterip());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getP0())){
+				this.setP0(vo.getP0());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getP1())){
+				this.setP1(vo.getP1());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getP2())){
+				this.setP2(vo.getP2());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getP3())){
+				this.setP3(vo.getP3());
+			}
+			
+		    		  
+		    		    
+			if(!StringUtil.isEmpty(vo.getP4())){
+				this.setP4(vo.getP4());
+			}
+			
+		    			
+		
+		}
+	    
+}  

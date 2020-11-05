@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Register">
+	<typeAlias alias="register" type="com.axt.vo.Register" />
+	<cacheModel id="RegisterCache" type="LRU" readOnly="true" serialize="true">
+		<flushInterval hours="24" />
+		<flushOnExecute statement="Register.delete" />
+		<flushOnExecute statement="Register.insert" />
+		<flushOnExecute statement="Register.update" />
+		<property name="size" value="1000" />
+	</cacheModel>
+
+		<sql id="Select_Field_Clause">
+									userid,
+									username,
+									password,
+									confirmpassword,
+									phone,
+									email,
+									phonevalidatecode,
+									invitecode,
+									unicodeflag
+						</sql>
+
+	<resultMap id="register-result" class="register">
+			    	    		 	<result column="userid" jdbcType="java.lang.Long" property="userid" />
+	    	    	    		 	<result column="username" jdbcType="java.lang.String" property="username" />
+	    	    	    		 	<result column="password" jdbcType="java.lang.String" property="password" />
+	    	    	    		 	<result column="confirmpassword" jdbcType="java.lang.String" property="confirmpassword" />
+	    	    	    		 	<result column="phone" jdbcType="java.lang.String" property="phone" />
+	    	    	    		 	<result column="emil" jdbcType="java.lang.String" property="email" />
+	    	    	    		 	<result column="phonevalidatecode" jdbcType="java.lang.String" property="phonevalidatecode" />
+	    	    	    		 	<result column="invitecode" jdbcType="java.lang.String" property="invitecode" />
+	    	    	    		 	<result column="unicodeflag" jdbcType="java.lang.String" property="unicodeflag" />
+	    	</resultMap>
+
+	<sql id="sql_of_where">
+		<dynamic prepend="WHERE">
+			    	    		  	<isNotEmpty prepend=" AND " property="userid">userid=#userid#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="username">username=#username#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="password">password=#password#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="confirmpassword">confirmpassword=#confirmpassword#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="phone">phone=#phone#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="email">email=#email#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="phonevalidatecode">phonevalidatecode=#phonevalidatecode#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="invitecode">invitecode=#invitecode#</isNotEmpty>
+	    	    	    		  	<isNotEmpty prepend=" AND " property="unicodeflag">unicodeflag=#unicodeflag#</isNotEmpty>
+
+	    		   
+			<!-- 基于扩展考虑的追加条件，请保留 Begin -->
+			<isNotEmpty prepend=" AND " property="filter">
+				( $filter$ )
+			</isNotEmpty>
+			<!-- 基于扩展考虑的追加条件，请保留 End -->
+		</dynamic>
+	</sql>
+<!-- 通用查询 -->
+	<select id="find" parameterClass="java.util.Map"
+		resultMap="register-result">
+		select
+			<include refid="Select_Field_Clause" />
+		from t_register
+		<include refid="sql_of_where" />
+		<dynamic prepend="order by">
+			<isNotEmpty property="order">$order$</isNotEmpty>
+			<isEmpty property="order">userid DESC</isEmpty>
+		</dynamic>
+		<dynamic>  
+	       <isPropertyAvailable property="startRow">  
+	              <isNotNull property="startRow">  
+	               limit #startRow#   
+	              </isNotNull>  
+	       </isPropertyAvailable>  
+	       <isPropertyAvailable property="pageSize" prepend=" , ">  
+	           <isNotNull property="pageSize">  
+	               #pageSize#  
+	           </isNotNull>  
+	       </isPropertyAvailable>  
+        </dynamic>
+	</select>
+<!-- 通用分页查询记录总数 修改此文件时注意 其内部查询条件应与通用查询条件保持一致， -->
+	<select id="findCount" parameterClass="java.util.Map" resultClass="Integer">
+		select count(*) from t_register
+		<include refid="sql_of_where" />
+	</select>
+    <select id="findUnique" parameterClass="java.util.Map"
+		resultMap="register-result">
+			select
+				<include refid="Select_Field_Clause" />
+			from t_register
+		<include refid="sql_of_where"/>
+	</select>
+	
+<!-- 插入 -->
+	<insert id="insert" parameterClass="register">
+		insert into t_register (
+									userid,
+									username,
+									password,
+									confirmpassword,
+									phone,
+									email,
+									phonevalidatecode,
+									invitecode,
+									unicodeflag
+						) values(
+					    	    						#userid:java.lang.Long#,
+					    	    						#username:java.lang.String#,
+					    	    						#password:java.lang.String#,
+					    	    						#confirmpassword:java.lang.String#,
+					    	    						#phone:java.lang.String#,
+					    	    						#email:java.lang.String#,
+					    	    						#phonevalidatecode:java.lang.String#,
+					    	    						#invitecode:java.lang.String#,
+					    	    						#unicodeflag:java.lang.String#
+						)
+		<selectKey resultClass="long" keyProperty="registerid" > 
+              SELECT LAST_INSERT_ID()  AS userid  
+       </selectKey>
+	</insert>
+<!-- 更新 -->
+	<update id="update" parameterClass="register">
+		update t_register
+		<dynamic prepend="set">
+												
+												<isNotNull prepend="," property="username">username = #username:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="password">password = #password:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="password">confirmpassword = #confirmpassword:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="phone">phone = #phone:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="email">email = #email:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="phonevalidatecode">phonevalidatecode = #phonevalidatecode:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="invitecode">invitecode = #invitecode:java.lang.String#</isNotNull>
+												<isNotNull prepend="," property="unicodeflag">unicodeflag = #unicodeflag:java.lang.String#</isNotNull>
+						</dynamic>
+		where userid = #userid:Long#
+		</update>
+
+<!-- 删除 -->
+	<delete id="delete" parameterClass="java.lang.Long">
+		<![CDATA[
+		DELETE FROM t_register WHERE userid=#userid:Long#
+		]]>
+	</delete>
+	
+	<delete id="delSelectAll" parameterClass="java.lang.String">
+		<![CDATA[
+		DELETE FROM t_register WHERE userid in($userids$)
+		]]>
+	</delete>
+</sqlMap>

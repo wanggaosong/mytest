@@ -1,0 +1,377 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib
+END
+mysql-connector-java-5.1.13-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.13-bin.jar
+END
+org.springframework.context-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/org.springframework.context-3.1.1.RELEASE.jar
+END
+org.springframework.transaction-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/org.springframework.transaction-3.1.1.RELEASE.jar
+END
+quyougame-security-2011.02.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/quyougame-security-2011.02.16.jar
+END
+c3p0-0.9.1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/c3p0-0.9.1.2.jar
+END
+wsdl4j-1.6.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/wsdl4j-1.6.2.jar
+END
+java_memcached-release_2.5.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/java_memcached-release_2.5.2.jar
+END
+org.springframework.beans-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/org.springframework.beans-3.1.1.RELEASE.jar
+END
+org.springframework.core-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar
+END
+javassist-3.11.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/javassist-3.11.0.GA.jar
+END
+commons-lang3-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-lang3-3.1.jar
+END
+jstl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/jstl.jar
+END
+org.springframework.expression-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/org.springframework.expression-3.1.1.RELEASE.jar
+END
+spring-data-commons-core-1.2.0.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/spring-data-commons-core-1.2.0.RELEASE.jar
+END
+logDBUtil.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/logDBUtil.jar
+END
+commons-collections-3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-collections-3.2.1.jar
+END
+quyougame-common-2011.08.10.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/quyougame-common-2011.08.10.jar
+END
+quyougame-properties-2011.03.21.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/quyougame-properties-2011.03.21.jar
+END
+jdom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/jdom.jar
+END
+commons-fileupload-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-fileupload-1.2.1.jar
+END
+quyougame.passport2.client-nospring-2013.1.17.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/quyougame.passport2.client-nospring-2013.1.17.jar
+END
+jedis-2.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/jedis-2.1.0.jar
+END
+servlet-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/servlet-api.jar
+END
+mongo-2.10.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/mongo-2.10.1.jar
+END
+jxl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/jxl.jar
+END
+cxf-2.2.11.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/cxf-2.2.11.jar
+END
+commons-net-3.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-net-3.2.jar
+END
+standard.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/standard.jar
+END
+log4j-1.2.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/log4j-1.2.16.jar
+END
+ibatis-sqlmap-2.3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/ibatis-sqlmap-2.3.0.jar
+END
+spring-data-mongodb-1.0.0.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/spring-data-mongodb-1.0.0.RELEASE.jar
+END
+qycsi20120426.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/qycsi20120426.jar
+END
+neethi-2.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/neethi-2.0.4.jar
+END
+commons-io-2.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-io-2.0.1.jar
+END
+spring-web.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/spring-web.jar
+END
+quyougame-file-2011.02.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/quyougame-file-2011.02.16.jar
+END
+json_simple-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/json_simple-1.1.jar
+END
+org.springframework.web.servlet-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/org.springframework.web.servlet-3.1.1.RELEASE.jar
+END
+spring-data-mongodb-log4j-1.0.0.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/spring-data-mongodb-log4j-1.0.0.RELEASE.jar
+END
+jackson-all-1.9.11.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/jackson-all-1.9.11.jar
+END
+spring-webmvc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/spring-webmvc.jar
+END
+commons-httpclient-3.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-httpclient-3.0.1.jar
+END
+ezmorph-1.0.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/ezmorph-1.0.6.jar
+END
+commons-pool-1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-pool-1.6.jar
+END
+XmlSchema-1.4.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/XmlSchema-1.4.7.jar
+END
+spring-data-mongodb-cross-store-1.0.0.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/spring-data-mongodb-cross-store-1.0.0.RELEASE.jar
+END
+cs.status.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/cs.status.jar
+END
+commons-codec-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-codec-1.5.jar
+END
+json-lib-2.3-jdk15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/json-lib-2.3-jdk15.jar
+END
+commons-logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar
+END
+commons-lang-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-lang-2.4.jar
+END
+ssologin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/ssologin.jar
+END
+commons-logging-1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-logging-1.0.4.jar
+END
+zxing.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/zxing.jar
+END
+YeePay_HTMLcommon_V3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/YeePay_HTMLcommon_V3.0.jar
+END
+org.springframework.web-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/org.springframework.web-3.1.1.RELEASE.jar
+END
+junit-4.8.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/junit-4.8.2.jar
+END
+commons-beanutils-1.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/commons-beanutils-1.7.0.jar
+END
+xwork-core-2.3.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/xwork-core-2.3.3.jar
+END
+org.springframework.aop-3.1.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/org.springframework.aop-3.1.1.RELEASE.jar
+END
+quyougame-task-2011.02.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/quyougame-task-2011.02.16.jar
+END
+spring.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/code/!svn/ver/4767/cookie/WebRoot/WEB-INF/lib/spring.jar
+END

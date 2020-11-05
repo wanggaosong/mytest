@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/code/!svn/ver/4767/cookie/src/com/axt/dao
+END
+GenericDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/code/!svn/ver/4767/cookie/src/com/axt/dao/GenericDAO.java
+END
+IRegisterDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code/!svn/ver/4767/cookie/src/com/axt/dao/IRegisterDao.java
+END
+IMemberDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/code/!svn/ver/4767/cookie/src/com/axt/dao/IMemberDao.java
+END
